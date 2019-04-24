@@ -1,0 +1,19 @@
+body{
+    text-align: center;
+}
+
+.questionForm{
+   margin: 5em;
+}
+
+.answerForm{
+    margin: 5em;
+}
+
+.btn{
+    margin: 2em;
+    padding: 10px 20px;
+    font-size: 30px;
+    border-radius: 10px;
+    width:50%; 
+}
