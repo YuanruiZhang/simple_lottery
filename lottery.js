@@ -28,7 +28,7 @@ let begin = document.getElementById("begin");
 begin.addEventListener("click",function(){
         if(runLottery){
         runLottery = false;
-        begin.innerHTML = "stop";
+        begin.innerHTML = "Stop";
         begin.classList.remove("btn-success");
         begin.classList.add("btn-danger");
             //clean the timer
@@ -42,7 +42,7 @@ begin.addEventListener("click",function(){
 		},50);
     }else{
         runLottery = true;
-        begin.innerHTML = "begin"
+        begin.innerHTML = "Begin"
         begin.classList.remove("btn-danger");
         begin.classList.add("btn-success");
         clearInterval(timer);
