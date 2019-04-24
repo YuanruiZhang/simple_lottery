@@ -1,5 +1,7 @@
+
 body{
     text-align: center;
+    background-image: url("./background.jpg")
 }
 
 .questionForm{
@@ -16,4 +18,12 @@ body{
     font-size: 30px;
     border-radius: 10px;
     width:50%; 
+}
+
+.redCol{
+    color: red;
+}
+
+.greenCol{
+    color: green;
 }
