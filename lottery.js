@@ -15,7 +15,6 @@ document.getElementById("nextQuestion").addEventListener("click",function(){
         question.innerHTML = questionList[currentQuestion];
 }else{
     clearInterval(timer);
-
     document.getElementsByClassName("questionForm")[0].innerHTML="";
     document.getElementsByClassName("answerForm")[0].innerHTML="You finished!"
     document.getElementsByClassName("button")[0].innerHTML="";
@@ -29,7 +28,9 @@ let begin = document.getElementById("begin");
 begin.addEventListener("click",function(){
         if(runLottery){
         runLottery = false;
-        begin.innerHTML = "stop"
+        begin.innerHTML = "stop";
+        begin.classList.remove("btn-success");
+        begin.classList.add("btn-danger");
             //clean the timer
 		clearInterval(timer);
 		//define the timer
@@ -42,6 +43,8 @@ begin.addEventListener("click",function(){
     }else{
         runLottery = true;
         begin.innerHTML = "begin"
+        begin.classList.remove("btn-danger");
+        begin.classList.add("btn-success");
         clearInterval(timer);
     }
         }
