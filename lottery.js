@@ -66,7 +66,7 @@ begin.addEventListener("click", function() {
       var random = Math.floor(Math.random() * answerList.length); //floor去取整
       //write in the answerList
       document.getElementById("answer").innerHTML = answerList[random];
-    }, 200);
+    }, 500);
   } else {
     runLottery = true;
     begin.innerHTML = "Begin";
